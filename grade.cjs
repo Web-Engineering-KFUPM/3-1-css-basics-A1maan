@@ -566,7 +566,7 @@ const tasks = [
           ".important-test includes at least one declared property",
           (() => {
             const matches = findMatchingRules(rules, ".important-test");
-            return matches.some((r) => /:\s*[^;]+;?/.test(r.decls);
+            return matches.some((r) => /:\s*[^;]+;?/.test(r.decls));
           })(),
           "Add at least one property declaration."
         )
